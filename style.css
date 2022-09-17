@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(to right, rgb(0, 0, 0, 0.600), rgb(0, 0, 0, 0.500)), url('./imgs/body-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.container h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.container .buttons button {
+  background-color: transparent;
+  padding: 0 30px;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+
+.container .buttons button:first-child {
+  background-color: rgb(7, 101, 7);
+  margin-right: 10px;
+}
+
+.container .buttons button:last-child {
+  background-color: rgb(129, 4, 4);
+}
